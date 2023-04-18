@@ -17,11 +17,6 @@ const App = () => {
     })
   })
 
-  const articleSearch = articles.map(obj => {
-    const searchData = [obj.des_facet, obj.org_facet, obj.per_facet, obj.geo_facet]
-    // console.log(searchData.flat())
-  })
-
   const articleDisplay = articles.map(obj => {
     return (
       <Article 
@@ -41,7 +36,6 @@ const App = () => {
       <h1>Test</h1>
       <div className="bg-gray-700 text-gray-200 p-5 place-items-center gap-4 select-none grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
         {articleDisplay}
-        {/* {articleSearch} */}
       </div>
     </div>
   );
