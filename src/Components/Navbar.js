@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     return (
-        <ul className="flex justify-center space-x-4 cursor-pointer sticky top-0 bg-gray-600 text-gray-200 select-none text-xl lg:text-2xl">
+        <ul className="flex justify-center py-2 space-x-4 cursor-pointer sticky top-0 bg-gray-600 text-gray-200 select-none text-xl lg:text-2xl">
             <Link to='/articles/home'>Home</Link>
             <Link to='/articles/business'>Business</Link>
             <Link to='/articles/movies'>Movies</Link>
