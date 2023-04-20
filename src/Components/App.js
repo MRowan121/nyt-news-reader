@@ -25,7 +25,7 @@ function App() {
       const manipulatedData = data.results.map(obj => {
         const searchData = [obj.des_facet, obj.org_facet, obj.per_facet, obj.geo_facet]
         const editedSearchData = searchData.flat().map(e => e.toLowerCase())
-        return {...obj, 'search_data': editedSearchData}
+        return {...obj, search_data: editedSearchData}
       })
       setArticles(manipulatedData)
     })
