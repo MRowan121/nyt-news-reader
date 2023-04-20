@@ -2,14 +2,14 @@ import React from "react";
 import Article from "./Article";
 
 const ArticleContainer = ({ articles }) => {
-    const articleDisplay = articles.map(obj => {
+    const articleDisplay = articles.map((obj, index) => {
         return (
           <Article 
             image={obj.multimedia[0].url} 
             caption={obj.multimedia[0].caption} 
             title={obj.title} 
             abstract={obj.abstract} 
-            key={obj.title}
+            key={index}
             url={obj.url}
           />
         )
