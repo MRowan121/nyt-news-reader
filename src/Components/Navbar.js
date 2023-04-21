@@ -15,7 +15,7 @@ const Navbar = () => {
    
 
     return (
-        <ul className="flex sm:justify-center p-3 space-x-4 cursor-pointer overflow-scroll bg-gray-600 text-gray-200 select-none text-lg sm:text-xl lg:text-2xl">
+        <ul className="flex sm:justify-center pt-3 px-3 space-x-4 cursor-pointer overflow-scroll bg-gray-600 text-gray-200 select-none text-lg sm:text-xl lg:text-2xl">
             {linkOptions}
         </ul>
     )

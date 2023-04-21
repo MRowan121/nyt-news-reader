@@ -17,7 +17,7 @@ const Search = ({ handleSearch }) => {
     }, [location])
 
     return (
-        <header className="bg-gray-600 pb-3 sticky top-0">
+        <header className="bg-gray-600 py-3 sticky top-0">
             <form className="flex justify-center">   
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-white sr-only">Search</label>
                 <div className="relative">
