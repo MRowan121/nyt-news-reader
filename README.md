@@ -17,13 +17,7 @@
 This application fetches data from the NY Times API and displays a list of articles. Each article in the list is linked to a detailed view of the article, which provides more information than the summary/list view. The application also includes search & filter functionality which allow users to find specific articles according to their preferences.
 
 ## Deployable Link
-[NYT Reader](https://imdb-clone-mrowan121.vercel.app/)
-
-## Table of Contents
-  * [Goals](#goals)
-  * [Set-Up Instructions](#set-up-instructions)
-  * [Demonstration](#demonstration)
-  * [Contributors](#Contributors)
+[NYT Reader](https://nyt-news-reader-pi.vercel.app/articles/home)
 
 ## Goals
 - Leverage React.js to enhance the user interface and experience
@@ -51,6 +45,9 @@ This application fetches data from the NY Times API and displays a list of artic
    ```
 
 ## Demonstration
+![ny_times_fetch](https://user-images.githubusercontent.com/110955503/233522231-34458ae9-ee51-458c-9c1c-cd23985d396d.gif)
+![ny_times_filter](https://user-images.githubusercontent.com/110955503/233522243-3742dfa6-8e85-4f80-b8e4-8931456ba8ef.gif)
+![ny_times_redirect](https://user-images.githubusercontent.com/110955503/233522252-6232da26-8bb6-4b89-8305-8f39f7ce7a26.gif)
 
 
 
