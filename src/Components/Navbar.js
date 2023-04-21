@@ -3,15 +3,20 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
+    const linkArray = ['Home','Business','Movies','Politics','Sports','Technology','World']
+
+    const linkOptions = linkArray.map((option, index) => {
+        return(
+            <Link to={`/articles/${option}`} key={index} className="link">
+                {option}
+            </Link>
+        )
+    })
+   
+
     return (
-        <ul className="flex justify-center py-2 space-x-4 cursor-pointer sticky top-0 bg-gray-600 text-gray-200 select-none text-xl lg:text-2xl">
-            <Link to='/articles/home'>Home</Link>
-            <Link to='/articles/business'>Business</Link>
-            <Link to='/articles/movies'>Movies</Link>
-            <Link to='/articles/politics'>Politics</Link>
-            <Link to='/articles/sports'>Sports</Link>
-            <Link to='/articles/technology'>Technology</Link>
-            <Link to='/articles/world'>World</Link>
+        <ul className="flex sm:justify-center p-3 space-x-4 cursor-pointer overflow-scroll bg-gray-600 text-gray-200 select-none text-lg sm:text-xl lg:text-2xl">
+            {linkOptions}
         </ul>
     )
 }
