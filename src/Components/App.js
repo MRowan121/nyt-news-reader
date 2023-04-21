@@ -38,8 +38,8 @@ function App() {
 
   return (
     <div className="bg-gray-700 min-h-screen">
-      <Search handleSearch={handleSearch} />
       <Navbar />
+      <Search handleSearch={handleSearch} />
       <Routes>
         <Route path={`/articles/:selection`} element={<ArticleContainer articles={search.length ? search : articles} />} />
         <Route path="*" element={<Navigate to={`/articles/${locationPath}`} replace />} />
