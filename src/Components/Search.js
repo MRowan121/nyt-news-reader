@@ -17,7 +17,7 @@ const Search = ({ handleSearch }) => {
     }, [location])
 
     return (
-        <header className="bg-gray-600 py-3">
+        <header className="bg-gray-600 pb-3 sticky top-0">
             <form className="flex justify-center">   
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-white sr-only">Search</label>
                 <div className="relative">
@@ -27,7 +27,7 @@ const Search = ({ handleSearch }) => {
                     <input
                         type="search" 
                         id="default-search" 
-                        className="block w-96 p-4 pl-10 text-sm text-white border rounded-lg bg-gray-700 focus:ring-blue-500 focus:border-blue-500 border-gray-600 placeholder-white"
+                        className="block w-80 p-4 pl-10 text-sm text-white border rounded-lg bg-gray-700 focus:ring-blue-500 focus:border-blue-500 border-gray-600 placeholder-white sm:w-96" 
                         placeholder="Search Articles..." 
                         name="search"
                         value={search}
